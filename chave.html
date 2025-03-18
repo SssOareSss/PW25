@@ -1,0 +1,25 @@
+// window.alert("olá mundo!");
+let ulnumeros = document.querySelector(".numeros ul");
+
+console.log(ulnumeros);
+
+ulnumeros.innerHTML = "";
+
+novoli = document.createElement("li");
+novoli.inerHTML = "99";
+
+
+//ulnumeros.appendChild(novoli);
+
+
+const chave = (1, 2, 3, 4, 5);
+
+function afixachave(){
+    for (let i = 0; i < chave.length; i++){
+        let novoli = document.createElement("li");
+        novoli.innerHTML = chave(i);
+        ulnumeros.appendChild(novoli);
+    }
+}
+
+afixachave(i);
