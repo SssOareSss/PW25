@@ -1,28 +1,46 @@
 {
-    "alunos": [
-      {
-        "nome": "Afonso",
-        "apelido": "Soares",
-        "curso": "Engenharia de Redes e Sistemas de Computadores",
-        "anoCurricular": 2
-      },
-      {
-        "nome": "Beatriz",
-        "apelido": "Silva",
-        "curso": "Gestão",
-        "anoCurricular": 1
-      }
-    ],
-    "cursos": [
-      {
-        "nomeDoCurso": "Engenharia Informática"
-      },
-      {
-        "nomeDoCurso": "Gestão"
-      },
-      {
-        "nomeDoCurso": "Design"
-      }
-    ]
-  }
-  
+  "alunos": [
+    {
+      "nome": "Beatriz",
+      "apelido": "Silva",
+      "curso": "Gestão",
+      "anoCurricular": 1,
+      "id": "604e"
+    },
+    {
+      "id": "7115"
+    },
+    {
+      "id": "f67f"
+    },
+    {
+      "id": "2302"
+    },
+    {
+      "id": "3e9a"
+    },
+    {
+      "id": "c478"
+    },
+    {
+      "id": "7664"
+    },
+    {
+      "id": "df5f"
+    }
+  ],
+  "cursos": [
+    {
+      "nomeDoCurso": "Engenharia Informática",
+      "id": "f5e6"
+    },
+    {
+      "nomeDoCurso": "Gestão",
+      "id": "d5f4"
+    },
+    {
+      "nomeDoCurso": "Design",
+      "id": "b615"
+    }
+  ]
+}
