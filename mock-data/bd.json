@@ -1,0 +1,28 @@
+{
+    "alunos": [
+      {
+        "nome": "Afonso",
+        "apelido": "Soares",
+        "curso": "Engenharia de Redes e Sistemas de Computadores",
+        "anoCurricular": 2
+      },
+      {
+        "nome": "Beatriz",
+        "apelido": "Silva",
+        "curso": "Gestão",
+        "anoCurricular": 1
+      }
+    ],
+    "cursos": [
+      {
+        "nomeDoCurso": "Engenharia Informática"
+      },
+      {
+        "nomeDoCurso": "Gestão"
+      },
+      {
+        "nomeDoCurso": "Design"
+      }
+    ]
+  }
+  
