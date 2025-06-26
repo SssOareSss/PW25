@@ -8,25 +8,32 @@
       "id": "604e"
     },
     {
-      "id": "7115"
+      "id": "1",
+      "nome": "João",
+      "apelido": "Silva",
+      "curso": "Informática",
+      "anoCurricular": 2
     },
     {
-      "id": "f67f"
+      "id": "7115",
+      "nome": "Ana",
+      "apelido": "Costa",
+      "curso": "Design",
+      "anoCurricular": 3
     },
     {
-      "id": "2302"
+      "id": "f67f",
+      "nome": "Pedro",
+      "apelido": "Martins",
+      "curso": "Gestão",
+      "anoCurricular": 2
     },
     {
-      "id": "3e9a"
-    },
-    {
-      "id": "c478"
-    },
-    {
-      "id": "7664"
-    },
-    {
-      "id": "df5f"
+      "id": "ab7b",
+      "nome": "João",
+      "apelido": "Soares",
+      "curso": "Redes",
+      "anoCurricular": 1
     }
   ],
   "cursos": [
@@ -41,6 +48,10 @@
     {
       "nomeDoCurso": "Design",
       "id": "b615"
+    },
+    {
+      "id": 3,
+      "nome": "Engenharia de Redes e Sistemas de Computadores"
     }
   ]
 }
