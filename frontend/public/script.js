@@ -3,12 +3,10 @@ const API_URL = 'https://pw25.onrender.com/alunos';
 document.addEventListener('DOMContentLoaded', () => {
   const tbody = document.getElementById('alunos-tbody');
 
-  // Modal edição e elementos
   const modalEditar = document.getElementById('modal-editar');
   const fecharEditar = document.getElementById('fechar-editar');
   const formEditar = document.getElementById('form-editar');
 
-  // Modal apagar e elementos
   const modalApagar = document.getElementById('modal-apagar');
   const fecharApagar = document.getElementById('fechar-apagar');
   const btnConfirmarApagar = document.getElementById('confirmar-apagar');
@@ -16,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let alunoIdParaApagar = null;
 
-  // Carrega lista de alunos da API
   async function carregarAlunos() {
     const resposta = await fetch(API_URL);
     const alunos = await resposta.json();
@@ -38,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Abre modal edição e pré-preenche o formulário
   window.abrirModalEditar = async function(id) {
     const res = await fetch(`${API_URL}/${id}`);
     const aluno = await res.json();
@@ -52,12 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
     formEditar.dataset.alunoId = id;
   };
 
-  // Fecha modal edição
   fecharEditar.onclick = () => {
     modalEditar.style.display = 'none';
   };
 
-  // Guarda alterações edição
   formEditar.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -79,13 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
     carregarAlunos();
   });
 
-  // Abre modal apagar
   window.abrirModalApagar = function(id) {
     alunoIdParaApagar = id;
     modalApagar.style.display = 'flex';
   };
 
-  // Fecha modal apagar
   fecharApagar.onclick = () => {
     modalApagar.style.display = 'none';
   };
@@ -93,7 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     modalApagar.style.display = 'none';
   };
 
-  // Confirmar apagar aluno
   btnConfirmarApagar.onclick = async () => {
     if (alunoIdParaApagar) {
       await fetch(`${API_URL}/${alunoIdParaApagar}`, { method: 'DELETE' });
@@ -103,12 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // Fecha modal se clicar fora da box
   window.onclick = function(event) {
     if (event.target === modalEditar) modalEditar.style.display = 'none';
     if (event.target === modalApagar) modalApagar.style.display = 'none';
   };
 
-  // Inicializa carregamento da tabela
   carregarAlunos();
 });
