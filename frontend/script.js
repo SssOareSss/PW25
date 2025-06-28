@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/alunos';
+const API_URL = 'https://pw25.onrender.com';
 
 document.addEventListener('DOMContentLoaded', () => {
   const tbody = document.getElementById('alunos-tbody');

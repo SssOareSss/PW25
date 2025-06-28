@@ -11,11 +11,16 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Rotas
+// Rota raiz para teste simples
+app.get('/', (req, res) => {
+  res.send('🎉 API da Biblioteca está a funcionar!');
+});
+
+// Rotas da API
 app.use('/alunos', alunoRoutes);
 app.use('/cursos', cursoRoutes);
 
-// Conexão MongoDB
+// Conexão ao MongoDB Atlas
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('MongoDB conectado com sucesso');
