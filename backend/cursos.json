@@ -1,0 +1,22 @@
+[
+    {
+      "id": "1",
+      "nomeDoCurso": "Engenharia Informática"
+    },
+    {
+      "id": "2",
+      "nomeDoCurso": "Design Gráfico"
+    },
+    {
+      "id": "3",
+      "nomeDoCurso": "Gestão"
+    },
+    {
+      "id": "4",
+      "nomeDoCurso": "Psicologia"
+    },
+    {
+      "id": "5",
+      "nomeDoCurso": "Engenharia de Redes e Sistemas de Computadores"
+    }
+  ]

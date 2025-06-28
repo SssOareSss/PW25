@@ -1,0 +1,54 @@
+{
+  "alunos": [
+    {
+      "nome": "Carlos",
+      "apelido": "Ferreira",
+      "curso": "Gestão",
+      "anoCurricular": 3,
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "nome": "Afonso",
+      "apelido": "Soares",
+      "curso": "Engenharia de Redes e Sistemas de Computadores",
+      "anoCurricular": 2
+    },
+    {
+      "id": "5",
+      "nome": "Beatriz",
+      "apelido": "Mendes",
+      "curso": "Psicologia",
+      "anoCurricular": 2
+    },
+    {
+      "id": "7",
+      "nome": "Pedro",
+      "apelido": "Lopes",
+      "curso": "Engenharia Informática",
+      "anoCurricular": 1
+    }
+  ],
+  "cursos": [
+    {
+      "id": "1",
+      "nomeDoCurso": "Engenharia Informática"
+    },
+    {
+      "id": "2",
+      "nomeDoCurso": "Design Gráfico"
+    },
+    {
+      "id": "3",
+      "nomeDoCurso": "Gestão"
+    },
+    {
+      "id": "4",
+      "nomeDoCurso": "Psicologia"
+    },
+    {
+      "id": "5",
+      "nomeDoCurso": "Engenharia de Redes e Sistemas de Computadores"
+    }
+  ]
+}

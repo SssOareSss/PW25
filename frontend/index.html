@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gestão de Alunos - Modais</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Gestão de Alunos</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Apelido</th>
+        <th>Curso</th>
+        <th>Ano Curricular</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="alunos-tbody">
+      <!-- Alunos carregados aqui -->
+    </tbody>
+  </table>
+
+  <!-- Modal Edição -->
+  <div id="modal-editar" class="modal">
+    <div class="modal-content">
+      <span class="close" id="fechar-editar">&times;</span>
+      <h2>Editar Aluno</h2>
+      <form id="form-editar">
+        <input type="text" id="edit-nome" placeholder="Nome" required />
+        <input type="text" id="edit-apelido" placeholder="Apelido" required />
+        <input type="text" id="edit-curso" placeholder="Curso" required />
+        <input type="number" id="edit-anoCurricular" placeholder="Ano Curricular" required min="1" />
+        <button type="submit">Guardar Alterações</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal Apagar -->
+  <div id="modal-apagar" class="modal">
+    <div class="modal-content">
+      <span class="close" id="fechar-apagar">&times;</span>
+      <h2>Confirmar Eliminação</h2>
+      <p>Tem certeza que deseja apagar este aluno?</p>
+      <button id="confirmar-apagar">Sim, Apagar</button>
+      <button id="cancelar-apagar">Cancelar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
